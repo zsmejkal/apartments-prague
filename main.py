@@ -15,7 +15,7 @@ app = FastAPI(title="Prague Apartments Crawler", version="1.0.0")
 # Add CORS middleware for React frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # React default port
+    allow_origins=["http://localhost:3000", "http://192.168.0.192:3000"],  # React default port
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
